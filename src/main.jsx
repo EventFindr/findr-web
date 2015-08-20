@@ -1,8 +1,6 @@
 import React from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
-const MARKER_ICON = "https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/images/markers-matte.png";
-
 const position = [0, 0];
 
 class FindrClient extends React.Component {

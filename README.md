@@ -9,15 +9,10 @@ First install dependencies:
 
 Then build with:
 
-    rm dist/*
-    browserify "src/main.jsx" -t babelify --outfile "dist/bundle.js"
-    cp static/index.html dist
+    gulp
 
 And run the build with:
 
-    cd dist
-    python3 -m http.server
+    nodejs server.js
 
-...or your preferred method of setting up a static web server.
-
-A makefile will be provided in the future.
+...or your preferred method of setting up a static web server for `/dist`.
