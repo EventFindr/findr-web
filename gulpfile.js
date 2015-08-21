@@ -1,6 +1,9 @@
+"use strict";
+
 var gulp = require("gulp");
 var browserify = require("browserify");
 var babel = require("babelify");
+var sass = require("gulp-sass");
 var source = require("vinyl-source-stream");
 
 gulp.task("compile-javascript", function () {
@@ -18,4 +21,10 @@ gulp.task("copy-static", function() {
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("default", ["compile-javascript", "copy-static"]);
+gulp.task("sass", function () {
+  gulp.src("stylesheets/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("default", ["compile-javascript", "copy-static", "sass"]);
