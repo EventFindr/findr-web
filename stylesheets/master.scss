@@ -7,3 +7,19 @@
 html, body {
   height: 100%;
 }
+
+
+.leaflet-popup-content article {
+  p {
+    margin: 13px 0;
+  }
+
+  header h1 {
+    @extend p;
+    display: inline;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: bold;
+    font-family: inherit;
+  }
+}
