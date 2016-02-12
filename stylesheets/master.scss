@@ -34,3 +34,10 @@ html, body, main {
   z-index: 10000;
   box-sizing: border-box;
 }
+
+#page-title {
+  position: fixed;
+  z-index: 5000;
+  top: 2em;
+  left: 2em;
+}

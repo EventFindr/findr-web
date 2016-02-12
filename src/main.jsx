@@ -122,7 +122,9 @@ class FindrMap extends React.Component {
         <EventCreation parent={this} />
       </div>;
     }
-    return (<main><Map center={position}
+    return (<main>
+      <h1 id="page-title">Findr</h1>
+      <Map center={position}
                   zoom={5}
                   onLeafletContextmenu={this.handleLeafletContextmenu}>
         <TileLayer
